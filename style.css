@@ -14,7 +14,6 @@ body {
     color: rgb(194, 193, 119);
 }
 #h{
-    font-family: 'Pacifico', cursive;
     color: crimson;
     margin: 0vh 1vw 0vh 1vw;
     padding-top: 1vh;
@@ -194,5 +193,9 @@ nav{
     font-size: 4vh;
     color: rgb(248, 246, 243);
   }
+    .img {
+    max-width: 17vw;
+    border-radius: 5.6rem;
+}
 
 }
