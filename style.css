@@ -1,3 +1,4 @@
+/* Global Reset and Box Sizing */
 * {
     margin: 0;
     padding: 0;
@@ -6,196 +7,253 @@
     border-color: white;
     border-style: solid;
     border-width: 0;
-}
-body {
-  font-family: "poppins", sans-serif;
-}
-#new{
-    color: rgb(194, 193, 119);
-}
-#h{
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: "poppins", sans-serif;
+  }
+  
+  /* Custom Styling for Specific Elements */
+  
+  /* Styling for the '#new' element */
+  #new {
+    color: rgb(202, 202, 163);
+    margin-top: 2vh;
+    font-weight: bolder;
+  }
+  
+  #h {
     color: crimson;
     margin: 0vh 1vw 0vh 1vw;
     padding-top: 1vh;
     font-size: x-large;
-}
-
-.books {
-  max-width: 12vw;
-}
-header {
-  height: 500px;
-  width: 100%;
-  background-image: url("./assets/kw-background.png");
-  background-size: 100% 100%;
-  color: white;
-}
-
-.header {
-  flex-direction: column;
-  max-height: 100%;
-  max-width: 60%;
-  padding: 4vh 5vw;
-}
-
-header h1 {
-  font-size: 4.7vh;
-  margin-right: 0px;
-}
-
-header h5 {
-  font-size: 1.5vh;
-  margin-top: 1vh;
-}
-
-.games,
-.crafts {
-  max-width: 17vw;
-}
-.games:nth-of-type(2),
-.crafts:nth-of-type(2) {
-  /* Your styles for every 2nd occurrence go here */
-  background-color: #ccc;
-}
-
-.for-all-flex {
-  display: flex;
-}
-
-.main {
-  flex-direction: column;
-  padding: 3vh 9vw;
-}
-
-.space-between {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.space-evenly {
-  justify-content: space-evenly;
-}
-nav>img{
-  padding: 0vh 1vw;
-  max-width: 23vw;
-}
-
-
-
-#cart {
-  font-weight: bold;
-  align-items: center;
-  font-size: 2.1vh;
-}
-#yellow-cart {
-  width: 2.5vh;
-  height: 2.5vh;
-  margin-top: 0.3vh;
-}
-
-
-.container {
-  margin: 4vh 0vw;
-}
-
-.button {
-  cursor: pointer;
-  background-color: #6095ff;
-  color: white;
-  padding: 0.5rem;
-  border-radius: 0.3rem;
+  }
   
-}
+  /* Styling for common image elements with class '.book-image' */
+  .book-image {
+    max-width: 12vw;
+  }
+  
+  /* Header Section Styling */
+  header {
+    height: 39vh;
+    width: 100%;
+    background-image: url("./assets/kw-background.png");
+    background-size: 100% 100%;
+    color: white;
+  }
+  
+  /* Header Container Styling */
+  .header {
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 60%;
+    padding: 4vh 5vw;
+  }
+  
+  /* Styling for slogan over header within the header */
+  #title {
+    font-size: 4.7vh;
+    margin-right: 0px;
+  }
 
-.add img {
-  width: 1.5rem;
-  padding-left: 5px;
-}
-
-.add {
-  margin-top: 15px;
-  padding-bottom: 50px;
-}
-
-footer {
-  background-color: #041a44;
-  color: white;
-  padding: 1vh 2vw;
-  color: rgb(209, 189, 189);
-}
-
-.img {
+  
+  .play {
+    max-width: 17vw;
+  }
+  
+  .handmade {
+    max-width: 17vw;
+  }
+  
+  /* Styling for every 2nd occurrence of '.play' and '.handmade' */
+  .play:nth-of-type(2),
+  .handmade:nth-of-type(2) {
+    background-color: #ccc;
+  }
+  
+  /* Flex Container Styling */
+  .for-all-flex {
+    display: flex;
+  }
+  
+  /* Main Section Styling */
+  .main {
+    flex-direction: column;
+    padding: 3vh 9vw;
+  }
+  
+  /* Utility Class for Space Between Flex Items */
+  .space-between {
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Utility Class for Space Evenly Flex Items */
+  .space-evenly {
+    justify-content: space-evenly;
+  }
+  
+  /* Navigation Styling */
+  nav > img {
+    padding: 0vh 1vw;
+    max-width: 23vw;
+  }
+  
+  /* Styling for the '#cart' element */
+  #cart {
+    font-weight: bold;
+    align-items: center;
+    font-size: 2.1vh;
+  }
+  
+  /* Styling for the '#yellow-cart' element */
+  #yellow-cart {
+    width: 2.5vh;
+    height: 2.5vh;
+    margin-top: 0.3vh;
+  }
+  
+  /* Container Styling */
+  .container {
+    margin: 4vh 0vw;
+  }
+  
+  /* Button Styling */
+  .button {
+    cursor: pointer;
+    background-color: #6095ff;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+  }
+  
+  /* Styling for images within '.add' */
+  .add img {
+    width: 1.5rem;
+    padding-left: 5px;
+  }
+  
+  /* Styling for '.add' class */
+  .add {
+    margin-top: 15px;
+    padding-bottom: 50px;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #041a44;
+    color: white;
+    padding: 1vh 2vw;
+    color: rgb(209, 189, 189);
+  }
+  
+  /* Styling for images with class '.img' */
+  .img {
     max-width: 10vw;
     border-radius: 5.6rem;
-}
-
-
-h4 {
-  color: grey;
-  font-weight: lighter;
-}
-
-h6 {
-  font-size: 1.1rem;
-}
-
-.add p {
-  font-weight: bolder;
-  font-size: 2vh;
-}
-#details {
+  }
+  
+  /* Styling for '.grey' class */
+  .grey {
+    color: grey;
+    font-weight: lighter;
+    font-size: 0.7rem;
+  }
+  
+  /* Styling for add cart text element */
+  #add {
+    font-size: 1.1rem;
+  }
+  
+  .add p {
+    font-weight: bolder;
+    font-size: 2vh;
+  }
+  
+  /* Styling for 'footer' */
+  #footer {
     flex-direction: column;
     text-align: right;
   }
+  #footer- {
+    font-size: 2vh;
+  }
   
-
-
-
-
-@media only screen and (max-width: 800px) {
-#details {
-     flex-direction: column;
+  /* Media Query for Screen Widths up to 800px */
+  @media only screen and (max-width: 800px) {
+    /* Adjustments for smaller screens */
+  
+    #footer- {
+      font-size: 1.3vh;
+      max-width: 120vw;
+    }
+  
+    .grey {
+      color: grey;
+      font-weight: lighter;
+      font-size: 0.6rem;
+    }
+  
+    #footer {
+      flex-direction: column;
       text-align: right;
       margin: 0vh 0vw 0vh 0vw;
       padding: 0vh 0vw 0vh 0vw;
     }
-      
+  
     .add img {
-        width: 3vw;
-        padding-left: 5px;
-      }
-.main-contain {
-  flex-wrap: wrap;
-}
-nav{
-  flex-wrap: wrap;
-  min-height: 3.1vh;
-}
-  header {
-    height: 29vh;
-    width: 100%;
-    text-align: start;
-  }
-  .books {
-    max-width: 28vw;
-    margin: 1vh 2vw;
-  }
-  .button{
-    margin:0vh 2vw ;
-  }
-  .games,
-  .crafts {
-  max-width: 38vw;
-  margin: 1vh 2vw;
-}
-
-  header h1 {
-    font-size: 4vh;
-    color: rgb(248, 246, 243);
-  }
+      width: 3vw;
+      padding-left: 5px;
+    }
+  
+    .main-contain {
+      flex-wrap: wrap;
+    }
+  
+    nav {
+      flex-wrap: wrap;
+      min-height: 3.1vh;
+    }
+  
+    header {
+      height: 29vh;
+      width: 100%;
+      text-align: start;
+    }
+  
+    .book-image {
+      max-width: 28vw;
+      margin: 1vh 2vw;
+    }
+  
+    #new {
+      color: rgb(194, 193, 119);
+      margin-top: 1vh;
+    }
+  
+    .button {
+      margin: 0vh 2vw;
+    }
+  
+    .play {
+      max-width: 38vw;
+      margin: 1vh 2vw;
+    }
+  
+    .handmade {
+      max-width: 38vw;
+      margin: 1vh 2vw;
+    }
+  
+    #title {
+      font-size: 4vh;
+      color: rgb(248, 246, 243);
+    }
+  
     .img {
-    max-width: 17vw;
-    border-radius: 5.6rem;
-}
-
+      max-width: 17vw;
+      border-radius: 50%;
+    }
 }
